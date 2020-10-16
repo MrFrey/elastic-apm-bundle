@@ -2,7 +2,7 @@
 
 namespace Goksagun\ElasticApmBundle\Security;
 
-use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorage;
+use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInterface;
 
 trait TokenStorageAwareTrait
 {
@@ -11,7 +11,7 @@ trait TokenStorageAwareTrait
      */
     protected $tokenStorage;
 
-    public function setTokenStorage(TokenStorage $tokenStorage)
+    public function setTokenStorage(TokenStorageInterface $tokenStorage)
     {
         $this->tokenStorage = $tokenStorage;
     }

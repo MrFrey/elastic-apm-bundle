@@ -2,9 +2,9 @@
 
 namespace Goksagun\ElasticApmBundle\Security;
 
-use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorage;
+use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInterface;
 
 interface TokenStorageAwareInterface
 {
-    public function setTokenStorage(TokenStorage $tokenStorage);
+    public function setTokenStorage(TokenStorageInterface $tokenStorage);
 }
